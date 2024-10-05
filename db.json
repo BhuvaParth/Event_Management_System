@@ -1,63 +1,97 @@
 {
-    "user": [
-        {
-            "id": "e34b",
-            "name": "demo",
-            "email": "demo@gmail.com",
-            "password": "123456"
-        },
-        {
-            "id": "8cde",
-            "name": "newdata",
-            "email": "newdata@gmail.com",
-            "password": "1234"
-        }
-    ],
-    "eventsData": [
-        {
-            "id": "e034b",
-            "imageUrl": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F846034949%2F2306504920333%2F1%2Foriginal.20240910-002311?w=940&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C1320%2C2160%2C1080&s=41caae6c24c20c3d883c2ebfc6a74801",
-            "title" : "UI/UX Kick Start Webinar",
-            "description" : "e 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more",
-            "date" : "Sunday, October 20 ",
-            "location" : "VR Mall Surat",
-            "eventType" : "business",
-            "time": "7 - 8:30pm IST",
-            "price": "300"
-        },
-        {
-            "id": "e94b",
-            "imageUrl": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F846034949%2F2306504920333%2F1%2Foriginal.20240910-002311?w=940&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C1320%2C2160%2C1080&s=41caae6c24c20c3d883c2ebfc6a74801",
-            "title" : "UI/UX Kick Start Webinar",
-            "description" : "e 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more",
-            "date" : "Sunday, October 20",
-            "location" : "VR Mall Surat",
-            "eventType" : "business",
-            "time": "7 - 8:30pm IST",
-            "price": "Free"
-        },
-        {
-            "id": "e347b",
-            "imageUrl": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F846034949%2F2306504920333%2F1%2Foriginal.20240910-002311?w=940&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C1320%2C2160%2C1080&s=41caae6c24c20c3d883c2ebfc6a74801",
-            "title" : "UI/UX Kick Start Webinar",
-            "description" : "e 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more",
-            "date" : "Sunday, October 20",
-            "location" : "VR Mall Surat",
-            "eventType" : "business",
-            "time": "7 - 8:30pm IST",
-            "price": "Free"
-        },
-        {
-            "id": "er34b",
-            "imageUrl": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F846034949%2F2306504920333%2F1%2Foriginal.20240910-002311?w=940&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C1320%2C2160%2C1080&s=41caae6c24c20c3d883c2ebfc6a74801",
-            "title" : "UI/UX Kick Start Webinar",
-            "description" : "e 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more",
-            "date" : "Sunday, October 20",
-            "location" : "VR Mall Surat",
-            "eventType" : "business",
-            "time": "7 - 8:30pm IST",
-            "price": "Free"
-        }
-        
-    ]
+  "user": [
+    {
+      "id": "e34b",
+      "name": "demo",
+      "email": "demo@gmail.com",
+      "password": "123456"
+    },
+    {
+      "id": "8cde",
+      "name": "newdata",
+      "email": "newdata@gmail.com",
+      "password": "1234"
+    }
+  ],
+  "eventsData": [
+    {
+      "id": "e034b",
+      "imageUrl": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F846034949%2F2306504920333%2F1%2Foriginal.20240910-002311?w=940&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C1320%2C2160%2C1080&s=41caae6c24c20c3d883c2ebfc6a74801",
+      "title": "UI/UX Kick Start Webinar",
+      "description": "e 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more",
+      "date": "Sunday, October 20 ",
+      "location": "VR Mall Surat",
+      "eventType": "business",
+      "time": "7 - 8:30pm IST",
+      "price": "300"
+    },
+    {
+      "id": "e94b",
+      "imageUrl": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F846034949%2F2306504920333%2F1%2Foriginal.20240910-002311?w=940&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C1320%2C2160%2C1080&s=41caae6c24c20c3d883c2ebfc6a74801",
+      "title": "UI/UX Kick Start Webinar",
+      "description": "e 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more",
+      "date": "Sunday, October 20",
+      "location": "VR Mall Surat",
+      "eventType": "business",
+      "time": "7 - 8:30pm IST",
+      "price": "Free"
+    },
+    {
+      "id": "e347b",
+      "imageUrl": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F846034949%2F2306504920333%2F1%2Foriginal.20240910-002311?w=940&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C1320%2C2160%2C1080&s=41caae6c24c20c3d883c2ebfc6a74801",
+      "title": "UI/UX Kick Start Webinar",
+      "description": "e 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more",
+      "date": "Sunday, October 20",
+      "location": "VR Mall Surat",
+      "eventType": "business",
+      "time": "7 - 8:30pm IST",
+      "price": "Free"
+    },
+    {
+      "id": "er34b",
+      "imageUrl": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F846034949%2F2306504920333%2F1%2Foriginal.20240910-002311?w=940&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C1320%2C2160%2C1080&s=41caae6c24c20c3d883c2ebfc6a74801",
+      "title": "UI/UX Kick Start Webinar",
+      "description": "e 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more",
+      "date": "Sunday, October 20",
+      "location": "VR Mall Surat",
+      "eventType": "business",
+      "time": "7 - 8:30pm IST",
+      "price": "Free"
+    },
+    {
+      "id": "1331",
+      "imageUrl": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F845141999%2F2309405875863%2F1%2Foriginal.png?w=940&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C0%2C940%2C470&s=aaeac34bd6114c1ab7a45fa41c290839",
+      "title": "birthday",
+      "description": "Vamos celebrar juntos o teu aniversário com muita diversão, comida boa e boas vibrações!",
+      "eventType": "business",
+      "date": "2024-10-19",
+      "time": "05:26",
+      "price": ""
+    },
+    {
+      "id": "504f",
+      "imageUrl": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F855848149%2F2213240376723%2F1%2Foriginal.20240921-034758?crop=focalpoint&fit=crop&w=940&auto=format%2Ccompress&q=75&sharp=10&fp-x=0.5&fp-y=0.5&s=44c1050c5bbe31516461e7b8513056c3",
+      "title": "Mediterranean food in tapas style",
+      "description": "Mediterranean food in tapas style",
+      "eventType": "business",
+      "date": "2024-10-31",
+      "startTime": "22:00",
+      "endTime": "12:00",
+      "price": "",
+      "time": "22:00 to 12:00"
+    },
+    {
+      "id": "4b40",
+      "imageUrl": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F845141999%2F2309405875863%2F1%2Foriginal.png?w=940&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C0%2C940%2C470&s=aaeac34bd6114c1ab7a45fa41c290839",
+      "title": "asdsdasds",
+      "description": "dasdsadasdasdasd",
+      "eventType": "education",
+      "date": "2024-10-08",
+      "startTime": "16:33",
+      "endTime": "17:33",
+      "location": "SURAT",
+      "price": "10",
+      "time": "16:33 to 17:33"
+    }
+  ]
 }
