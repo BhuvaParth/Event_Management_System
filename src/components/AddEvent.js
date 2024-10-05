@@ -15,6 +15,7 @@ export default function AddEvent() {
     endTime: "",
     location: "",
     price: "",
+    mapUrl: "",
   });
   const [errors, setErrors] = useState({});
 
@@ -27,13 +28,13 @@ export default function AddEvent() {
     const newErrors = {};
     if (!formData.imageUrl) newErrors.imageUrl = "Image URL is required";
     if (!formData.title) newErrors.title = "Title is required";
-    if (!formData.description)
-      newErrors.description = "Description is required";
+    if (!formData.description) newErrors.description = "Description is required";
     if (!formData.eventType) newErrors.eventType = "Event type is required";
     if (!formData.date) newErrors.date = "Date is required";
     if (!formData.startTime || !formData.endTime)
       newErrors.time = "Start and end times are required";
     if (!formData.location) newErrors.location = "Location is required";
+    if (!formData.mapUrl) newErrors.mapUrl = "Map URL is required"; 
     return newErrors;
   };
 
@@ -51,9 +52,10 @@ export default function AddEvent() {
       try {
         await axios.post("http://localhost:3000/eventsData", eventData);
         alert("Event added successfully!");
-        navigate("/");
+        navigate("/"); 
       } catch (error) {
         console.error("Error adding event:", error);
+        alert("There was an error adding the event. Please try again."); 
       }
     }
   };
@@ -64,10 +66,7 @@ export default function AddEvent() {
 
       <form onSubmit={handleSubmit}>
         <div className="mb-4">
-          <label
-            htmlFor="imageUrl"
-            className="block text-sm font-medium text-gray-700"
-          >
+          <label htmlFor="imageUrl" className="block text-sm font-medium text-gray-700">
             Image URL
           </label>
           <input
@@ -79,16 +78,11 @@ export default function AddEvent() {
             placeholder="Enter image URL"
             className="mt-1 block w-full p-2 border border-gray-300 rounded-md shadow-sm"
           />
-          {errors.imageUrl && (
-            <p className="text-red-500 text-sm">{errors.imageUrl}</p>
-          )}
+          {errors.imageUrl && <p className="text-red-500 text-sm">{errors.imageUrl}</p>}
         </div>
 
         <div className="mb-4">
-          <label
-            htmlFor="title"
-            className="block text-sm font-medium text-gray-700"
-          >
+          <label htmlFor="title" className="block text-sm font-medium text-gray-700">
             Title
           </label>
           <input
@@ -100,16 +94,11 @@ export default function AddEvent() {
             placeholder="Event title"
             className="mt-1 block w-full p-2 border border-gray-300 rounded-md shadow-sm"
           />
-          {errors.title && (
-            <p className="text-red-500 text-sm">{errors.title}</p>
-          )}
+          {errors.title && <p className="text-red-500 text-sm">{errors.title}</p>}
         </div>
 
         <div className="mb-4">
-          <label
-            htmlFor="description"
-            className="block text-sm font-medium text-gray-700"
-          >
+          <label htmlFor="description" className="block text-sm font-medium text-gray-700">
             Description
           </label>
           <textarea
@@ -121,16 +110,11 @@ export default function AddEvent() {
             placeholder="Enter event description"
             className="mt-1 block w-full p-2 border border-gray-300 rounded-md shadow-sm"
           ></textarea>
-          {errors.description && (
-            <p className="text-red-500 text-sm">{errors.description}</p>
-          )}
+          {errors.description && <p className="text-red-500 text-sm">{errors.description}</p>}
         </div>
 
         <div className="mb-4">
-          <label
-            htmlFor="eventType"
-            className="block text-sm font-medium text-gray-700"
-          >
+          <label htmlFor="eventType" className="block text-sm font-medium text-gray-700">
             Event Type
           </label>
           <select
@@ -145,16 +129,11 @@ export default function AddEvent() {
             <option value="education">Education</option>
             <option value="entertainment">Entertainment</option>
           </select>
-          {errors.eventType && (
-            <p className="text-red-500 text-sm">{errors.eventType}</p>
-          )}
+          {errors.eventType && <p className="text-red-500 text-sm">{errors.eventType}</p>}
         </div>
 
         <div className="mb-4">
-          <label
-            htmlFor="date"
-            className="block text-sm font-medium text-gray-700"
-          >
+          <label htmlFor="date" className="block text-sm font-medium text-gray-700">
             Date
           </label>
           <input
@@ -169,15 +148,10 @@ export default function AddEvent() {
         </div>
 
         <div className="mb-4">
-          <label className="block text-sm font-medium text-gray-700">
-            Event Time
-          </label>
+          <label className="block text-sm font-medium text-gray-700">Event Time</label>
           <div className="flex space-x-4">
             <div>
-              <label
-                htmlFor="startTime"
-                className="block text-xs font-medium text-gray-600"
-              >
+              <label htmlFor="startTime" className="block text-xs font-medium text-gray-600">
                 Start Time
               </label>
               <input
@@ -190,10 +164,7 @@ export default function AddEvent() {
               />
             </div>
             <div>
-              <label
-                htmlFor="endTime"
-                className="block text-xs font-medium text-gray-600"
-              >
+              <label htmlFor="endTime" className="block text-xs font-medium text-gray-600">
                 End Time
               </label>
               <input
@@ -210,10 +181,7 @@ export default function AddEvent() {
         </div>
 
         <div className="mb-4">
-          <label
-            htmlFor="location"
-            className="block text-sm font-medium text-gray-700"
-          >
+          <label htmlFor="location" className="block text-sm font-medium text-gray-700">
             Location
           </label>
           <input
@@ -225,16 +193,27 @@ export default function AddEvent() {
             placeholder="Enter event location"
             className="mt-1 block w-full p-2 border border-gray-300 rounded-md shadow-sm"
           />
-          {errors.location && (
-            <p className="text-red-500 text-sm">{errors.location}</p>
-          )}
+          {errors.location && <p className="text-red-500 text-sm">{errors.location}</p>}
         </div>
 
         <div className="mb-4">
-          <label
-            htmlFor="price"
-            className="block text-sm font-medium text-gray-700"
-          >
+          <label htmlFor="mapUrl" className="block text-sm font-medium text-gray-700">
+            Map URL
+          </label>
+          <input
+            type="url"
+            id="mapUrl"
+            name="mapUrl"
+            value={formData.mapUrl}
+            onChange={handleInputChange}
+            placeholder="Enter map URL"
+            className="mt-1 block w-full p-2 border border-gray-300 rounded-md shadow-sm"
+          />
+          {errors.mapUrl && <p className="text-red-500 text-sm">{errors.mapUrl}</p>}
+        </div>
+
+        <div className="mb-4">
+          <label htmlFor="price" className="block text-sm font-medium text-gray-700">
             Price (optional)
           </label>
           <input
