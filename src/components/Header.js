@@ -4,10 +4,15 @@ import { Link, useNavigate } from "react-router-dom";
 
 export default function Header({ onLogout, userId }) {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const navigate = useNavigate();
 
   const toggleDropdown = () => {
     setIsDropdownOpen(!isDropdownOpen);
+  };
+
+  const toggleMobileMenu = () => {
+    setIsMobileMenuOpen(!isMobileMenuOpen);
   };
 
   const handleLogout = () => {
@@ -16,35 +21,17 @@ export default function Header({ onLogout, userId }) {
   };
 
   return (
-    <header className="flex items-center justify-between px-12 py-4 bg-gray-800 text-white">
+    <header className="flex items-center justify-between px-4 py-4 bg-gray-800 text-white md:px-12">
       <div className="text-xl font-bold cursor-pointer">
         <Link to="/home">Events Partner</Link>
       </div>
 
-      <div className="flex items-center space-x-4">
+      <div className="hidden md:flex items-center space-x-4">
         <button
           className="flex items-center hover:text-gray-400"
           onClick={() => navigate("/")}
         >
           Home
-        </button>
-        <button
-          className="flex items-center hover:text-gray-400"
-          onClick={() => navigate("/search")}
-        >
-          Search
-        </button>
-        <button
-          className="flex items-center hover:text-gray-400"
-          onClick={() => navigate("/expo-events")}
-        >
-          Expo Events
-        </button>
-        <button
-          className="flex items-center hover:text-gray-400"
-          onClick={() => navigate("/music-events")}
-        >
-          Music Events
         </button>
         <button
           className="flex items-center hover:text-gray-400"
@@ -54,14 +41,41 @@ export default function Header({ onLogout, userId }) {
         </button>
       </div>
 
-      <div className="flex gap-2 items-center space-x-4">
-        <button className="relative hover:text-gray-400">
-          <NotificationIcon className="w-6 h-6" />
-          <span className="absolute -top-1 -right-1 bg-red-600 text-xs text-white rounded-full h-5 w-5 flex items-center justify-center">
-            3
-          </span>
+      <div className="flex items-center md:hidden">
+        <button onClick={toggleMobileMenu} className="focus:outline-none">
+          <svg
+            className="w-6 h-6"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M4 6h16M4 12h16m-7 6h7"
+            />
+          </svg>
         </button>
+      </div>
 
+      <div className={`absolute top-16 right-4 bg-gray-800 text-white rounded-md shadow-lg md:hidden ${isMobileMenuOpen ? 'block' : 'hidden'}`}>
+        <button
+          className="block px-4 py-2 hover:bg-gray-700"
+          onClick={() => navigate("/")}
+        >
+          Home
+        </button>
+        <button
+          className="block px-4 py-2 hover:bg-gray-700"
+          onClick={() => navigate("/create-event")}
+        >
+          Create Event
+        </button>
+      </div>
+
+      <div className="flex gap-2 items-center space-x-4">
         <div className="relative">
           <button
             onClick={toggleDropdown}

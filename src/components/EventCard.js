@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
-export default function Cards({ searchQuery = "" }) {
+export default function Cards() {
   const [events, setEvents] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
+  const [searchQuery, setSearchQuery] = useState("");
 
   useEffect(() => {
     const fetchData = async () => {
@@ -46,12 +47,30 @@ export default function Cards({ searchQuery = "" }) {
     return <div className="text-center">No events found.</div>;
   }
 
-  const filteredEvents = events.filter((event) =>
-    event.title.toLowerCase().includes(searchQuery.toLowerCase())
-  );
+  const filteredEvents = events.filter((event) => {
+    const lowerCaseQuery = searchQuery.toLowerCase();
+    return (
+      (event.title && event.title.toLowerCase().includes(lowerCaseQuery)) ||
+      (event.location &&
+        event.location.toLowerCase().includes(lowerCaseQuery)) ||
+      (event.date && event.date.toLowerCase().includes(lowerCaseQuery)) ||
+      (event.eventType &&
+        event.eventType.toLowerCase().includes(lowerCaseQuery))
+    );
+  });
 
   return (
     <div className="max-w-screen-xl mx-auto px-4">
+      <div className="flex justify-center mb-4">
+        <input
+          type="text"
+          placeholder="Search by title, location, date, or type..."
+          className="border-2 border-gray-800 my-12 rounded-md p-2 w-full max-w-lg"
+          value={searchQuery}
+          onChange={(e) => setSearchQuery(e.target.value)}
+        />
+      </div>
+
       <h1 className="text-3xl font-bold text-center mb-8">Upcoming Events</h1>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
@@ -77,8 +96,7 @@ export default function Cards({ searchQuery = "" }) {
                 <p className="text-gray-600 mb-1">{event.date}</p>
                 <p className="text-gray-600 mb-1">{event.location}</p>
                 <p className="text-gray-600 mb-1">{event.eventType}</p>
-                <p className="font-semibold">${event.price ||  'Free'}</p>
-
+                <p className="font-semibold">${event.price || "Free"}</p>
               </div>
             </Link>
           ))
