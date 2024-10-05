@@ -1,7 +1,6 @@
-
 import React, { useState } from "react";
 import { FaCog, FaBell as NotificationIcon } from "react-icons/fa";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 export default function Header({ onLogout, userId }) {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
@@ -12,13 +11,15 @@ export default function Header({ onLogout, userId }) {
   };
 
   const handleLogout = () => {
-    onLogout(); 
+    onLogout();
     navigate("/login");
   };
 
   return (
     <header className="flex items-center justify-between px-12 py-4 bg-gray-800 text-white">
-      <div className="text-xl font-bold cursor-pointer">Login</div>
+      <div className="text-xl font-bold cursor-pointer">
+        <Link to="/home">Events Partner</Link>
+      </div>
 
       <div className="flex items-center space-x-4">
         <button

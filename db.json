@@ -1,16 +1,63 @@
 {
-  "user": [
-    {
-      "id": "e34b",
-      "name": "demo",
-      "email": "demo@gmail.com",
-      "password": "123456"
-    },
-    {
-      "id": "8cde",
-      "name": "newdata",
-      "email": "newdata@gmail.com",
-      "password": "1234"
-    }
-  ]
+    "user": [
+        {
+            "id": "e34b",
+            "name": "demo",
+            "email": "demo@gmail.com",
+            "password": "123456"
+        },
+        {
+            "id": "8cde",
+            "name": "newdata",
+            "email": "newdata@gmail.com",
+            "password": "1234"
+        }
+    ],
+    "eventsData": [
+        {
+            "id": "e034b",
+            "imageUrl": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F846034949%2F2306504920333%2F1%2Foriginal.20240910-002311?w=940&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C1320%2C2160%2C1080&s=41caae6c24c20c3d883c2ebfc6a74801",
+            "title" : "UI/UX Kick Start Webinar",
+            "description" : "e 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more",
+            "date" : "Sunday, October 20 ",
+            "location" : "VR Mall Surat",
+            "eventType" : "business",
+            "time": "7 - 8:30pm IST",
+            "price": "300"
+        },
+        {
+            "id": "e94b",
+            "imageUrl": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F846034949%2F2306504920333%2F1%2Foriginal.20240910-002311?w=940&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C1320%2C2160%2C1080&s=41caae6c24c20c3d883c2ebfc6a74801",
+            "title" : "UI/UX Kick Start Webinar",
+            "description" : "e 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more",
+            "date" : "Sunday, October 20",
+            "location" : "VR Mall Surat",
+            "eventType" : "business",
+            "time": "7 - 8:30pm IST",
+            "price": "Free"
+        },
+        {
+            "id": "e347b",
+            "imageUrl": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F846034949%2F2306504920333%2F1%2Foriginal.20240910-002311?w=940&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C1320%2C2160%2C1080&s=41caae6c24c20c3d883c2ebfc6a74801",
+            "title" : "UI/UX Kick Start Webinar",
+            "description" : "e 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more",
+            "date" : "Sunday, October 20",
+            "location" : "VR Mall Surat",
+            "eventType" : "business",
+            "time": "7 - 8:30pm IST",
+            "price": "Free"
+        },
+        {
+            "id": "er34b",
+            "imageUrl": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F846034949%2F2306504920333%2F1%2Foriginal.20240910-002311?w=940&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C1320%2C2160%2C1080&s=41caae6c24c20c3d883c2ebfc6a74801",
+            "title" : "UI/UX Kick Start Webinar",
+            "description" : "e 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more",
+            "date" : "Sunday, October 20",
+            "location" : "VR Mall Surat",
+            "eventType" : "business",
+            "time": "7 - 8:30pm IST",
+            "price": "Free"
+        }
+        
+    ]
 }

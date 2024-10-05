@@ -13,6 +13,9 @@ import Search from "./pages/Search";
 import ExpoEvents from "./pages/ExpoEvents";
 import MusicEvents from "./pages/MusicEvents";
 import Header from "./components/Header";
+import AddEvent from "./components/AddEvent";
+import EditEvent from "./components/EditEvent";
+import About from "./pages/About";
 
 function App() {
   const [isAuthenticated, setIsAuthenticated] = useState(() => {
@@ -68,6 +71,18 @@ function App() {
         <Route
           path="/music-events"
           element={isAuthenticated ? <MusicEvents /> : <Navigate to="/login" />}
+        />
+        <Route
+          path="/create-event"
+          element={isAuthenticated ? <AddEvent /> : <Navigate to="/login" />}
+        />
+        <Route
+          path="/about"
+          element={isAuthenticated ? <About /> : <Navigate to="/login" />}
+        />
+        <Route
+          path="/edit-event/:eventId" 
+          element={isAuthenticated ? <EditEvent /> : <Navigate to="/login" />}
         />
         <Route path="*" element={<Navigate to="/login" />} />
       </Routes>
