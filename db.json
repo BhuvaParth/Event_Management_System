@@ -1,46 +1,102 @@
 {
-  "user": [
-    {
-      "id": "e34b",
-      "name": "demo",
-      "email": "demo@gmail.com",
-      "password": "123456"
-    },
-    {
-      "id": "8cde",
-      "name": "newdata",
-      "email": "newdata@gmail.com",
-      "password": "1234"
-    }
-  ],
-  "eventsData": [
-    {
-      "imageUrl": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F846034949%2F2306504920333%2F1%2Foriginal.20240910-002311?w=940&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C1320%2C2160%2C1080&s=41caae6c24c20c3d883c2ebfc6a74801",
-      "title": "UI/UX Kick Start Webinarr",
-      "description": "e 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more",
-      "eventType": "business",
-      "date": "Sunday, October 20",
-      "startTime": "7",
-      "endTime": "8:30pm IST",
-      "location": "VR Mall Surat",
-      "price": "Free",
-      "mapUrl": "",
-      "time": "7 - 8:30pm IST",
-      "id": "e347b"
-    },
-    {
-      "imageUrl": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F855848149%2F2213240376723%2F1%2Foriginal.20240921-034758?crop=focalpoint&fit=crop&w=940&auto=format%2Ccompress&q=75&sharp=10&fp-x=0.5&fp-y=0.5&s=44c1050c5bbe31516461e7b8513056c3",
-      "title": "Mediterranean food in tapas style",
-      "description": "Mediterranean food in tapas style",
-      "eventType": "business",
-      "date": "2024-10-31",
-      "startTime": "22:00 to 12:00",
-      "endTime": "",
-      "location": "",
-      "price": "",
-      "mapUrl": "",
-      "time": "22:00 to 12:00 - ",
-      "id": "504f"
-    }
-  ]
+    "user": [
+        {
+            "id": "e34b",
+            "name": "demo",
+            "email": "demo@gmail.com",
+            "password": "123456"
+        },
+        {
+            "id": "8cde",
+            "name": "newdata",
+            "email": "newdata@gmail.com",
+            "password": "1234"
+        }
+    ],
+    "eventsData": [
+        {
+            "imageUrl": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F846034949%2F2306504920333%2F1%2Foriginal.20240910-002311?w=940&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C1320%2C2160%2C1080&s=41caae6c24c20c3d883c2ebfc6a74801",
+            "title": "UI/UX Kick Start Webinarr",
+            "description": "e 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more",
+            "eventType": "business",
+            "date": "Sunday, October 20",
+            "startTime": "7",
+            "endTime": "8:30pm IST",
+            "location": "VR Mall Surat",
+            "price": "Free",
+            "mapUrl": "",
+            "time": "7 - 8:30pm IST",
+            "id": "e347b"
+        },
+        {
+            "imageUrl": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F855848149%2F2213240376723%2F1%2Foriginal.20240921-034758?crop=focalpoint&fit=crop&w=940&auto=format%2Ccompress&q=75&sharp=10&fp-x=0.5&fp-y=0.5&s=44c1050c5bbe31516461e7b8513056c3",
+            "title": "Mediterranean food in tapas style",
+            "description": "Mediterranean food in tapas style",
+            "eventType": "business",
+            "date": "2024-10-31",
+            "startTime": "22:00 to 12:00",
+            "endTime": "",
+            "location": "",
+            "price": "",
+            "mapUrl": "",
+            "time": "22:00 to 12:00 - ",
+            "id": "504f"
+        },
+        {
+            "id": "bf97",
+            "imageUrl": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F436028499%2F1344345462213%2F1%2Foriginal.jpg?w=940&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C0%2C2160%2C1080&s=8d9cdafc22de7feb63d8e482c3069ddd",
+            "title": "FREE Intro to Qigong Flow",
+            "description": "Intro Class with gentle movements cultivating your energy for optimal health, harmony, and alchemy. Drop into the wellness state of Qigong!\n\n",
+            "eventType": "entertainment",
+            "date": "2024-10-08",
+            "startTime": "19:56",
+            "endTime": "21:00",
+            "location": "VR Mall Surat",
+            "price": "",
+            "mapUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14879.142928112853!2d72.79793829332947!3d21.20066914342069!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be04e81f2dc4053%3A0x7b418681bd138a28!2sAdajan%20Patiya%2C%20Surat%2C%20Gujarat!5e0!3m2!1sen!2sin!4v1728169704937!5m2!1sen!2sin\"",
+            "time": "19:56 to 21:00"
+        },
+        {
+            "imageUrl": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F855848149%2F2213240376723%2F1%2Foriginal.20240921-034758?crop=focalpoint&fit=crop&w=940&auto=format%2Ccompress&q=75&sharp=10&fp-x=0.5&fp-y=0.5&s=44c1050c5bbe31516461e7b8513056c3",
+            "title": "Mediterranean food in tapas style",
+            "description": "Mediterranean food in tapas style",
+            "eventType": "business",
+            "date": "2024-10-31",
+            "startTime": "22:00 to 12:00",
+            "endTime": "",
+            "location": "",
+            "price": "",
+            "mapUrl": "",
+            "time": "22:00 to 12:00 - ",
+            "id": "544f"
+        },
+        {
+            "id": "bj97",
+            "imageUrl": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F436028499%2F1344345462213%2F1%2Foriginal.jpg?w=940&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C0%2C2160%2C1080&s=8d9cdafc22de7feb63d8e482c3069ddd",
+            "title": "FREE Intro to Qigong Flow",
+            "description": "Intro Class with gentle movements cultivating your energy for optimal health, harmony, and alchemy. Drop into the wellness state of Qigong!\n\n",
+            "eventType": "entertainment",
+            "date": "2024-10-08",
+            "startTime": "19:56",
+            "endTime": "21:00",
+            "location": "VR Mall Surat",
+            "price": "",
+            "mapUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14879.142928112853!2d72.79793829332947!3d21.20066914342069!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be04e81f2dc4053%3A0x7b418681bd138a28!2sAdajan%20Patiya%2C%20Surat%2C%20Gujarat!5e0!3m2!1sen!2sin!4v1728169704937!5m2!1sen!2sin\"",
+            "time": "19:56 to 21:00"
+        },
+        {
+            "id": "079f",
+            "imageUrl": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F716407179%2F1337750427883%2F1%2Foriginal.20240311-122216?w=940&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C40%2C1280%2C640&s=e82b805ba8a53bbcfb6ca03e0bf1e21d",
+            "title": "15th Engiexpo Industrial Exhibition In Surat",
+            "description": "Welcome to the 15th Engiexpo Industrial Exhibition in Surat! A Mega Industrial Exhibition\n\n",
+            "eventType": "business",
+            "date": "2025-02-01",
+            "startTime": "20:00",
+            "endTime": "22:00",
+            "location": "VR Mall Surat",
+            "price": "10",
+            "mapUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52891323.64355656!2d-161.7572472789203!3d35.990241455780485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54eab584e432360b%3A0x1c3bb99243deb742!2sUnited%20States!5e0!3m2!1sen!2sin!4v1728168672030!5m2!1sen!2sin",
+            "time": "20:00 to 22:00"
+        }
+    ]
 }
