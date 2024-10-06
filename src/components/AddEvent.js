@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
+import { ToastContainer, toast } from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css';
 
 export default function AddEvent() {
   const navigate = useNavigate();
@@ -51,17 +53,22 @@ export default function AddEvent() {
 
       try {
         await axios.post("http://localhost:3000/eventsData", eventData);
-        alert("Event added successfully!");
-        navigate("/"); 
+        toast.success("Event added successfully!");
+        setTimeout(() => {
+          navigate("/");
+        }, 2000); 
       } catch (error) {
         console.error("Error adding event:", error);
-        alert("There was an error adding the event. Please try again."); 
+        toast.error("There was an error adding the event. Please try again.");
       }
+    } else {
+      toast.error("Please fix the errors in the form.");
     }
   };
 
   return (
     <div className="container mx-auto max-w-4xl p-6 bg-white shadow-lg mt-10 rounded-lg mb-16">
+      <ToastContainer /> 
       <h1 className="text-2xl font-bold mb-6">Add Event</h1>
 
       <form onSubmit={handleSubmit}>
@@ -230,9 +237,9 @@ export default function AddEvent() {
         <div className="mb-6">
           <button
             type="submit"
-            className="w-full bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-700"
+            className="w-full bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-700 transition duration-300"
           >
-            Submit Event
+            Add Event
           </button>
         </div>
       </form>

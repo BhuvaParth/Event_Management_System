@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
+import { ToastContainer, toast } from "react-toastify"; 
+import "react-toastify/dist/ReactToastify.css"; 
 
 export default function EditEvent() {
   const location = useLocation();
@@ -18,7 +20,7 @@ export default function EditEvent() {
     endTime: "",
     location: "",
     price: "",
-    mapUrl: "", 
+    mapUrl: "",
   });
 
   useEffect(() => {
@@ -33,7 +35,7 @@ export default function EditEvent() {
         endTime: event.time?.split(" - ")[1] || "",
         location: event.location || "",
         price: event.price || "",
-        mapUrl: event.mapUrl || "", 
+        mapUrl: event.mapUrl || "",
       });
     }
   }, [event]);
@@ -51,40 +53,47 @@ export default function EditEvent() {
 
     if (!eventId) {
       console.error("Event ID is missing");
-      return; 
+      return;
     }
 
     try {
       console.log("Form data being submitted:", formData);
       console.log("Event ID:", eventId);
 
-      const response = await fetch(`http://localhost:3000/eventsData/${eventId}`, {
-        method: "PUT",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          ...formData,
-          time: `${formData.startTime} - ${formData.endTime}`, 
-        }),
-      });
+      const response = await fetch(
+        `http://localhost:3000/eventsData/${eventId}`,
+        {
+          method: "PUT",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            ...formData,
+            time: `${formData.startTime} - ${formData.endTime}`,
+          }),
+        }
+      );
 
       if (!response.ok) {
         const errorDetails = await response.text();
-        console.error("Error details:", errorDetails); 
+        console.error("Error details:", errorDetails);
         throw new Error("Failed to update event");
       }
 
-      navigate("/");
+      toast.success("Event updated successfully!"); 
+      setTimeout(() => {
+        navigate("/");
+      }, 2000);
     } catch (error) {
       console.error("Error updating event:", error);
+      toast.error("Error updating event."); 
     }
   };
 
   return (
     <div className="container mx-auto max-w-4xl p-6 bg-white shadow-lg mt-10 rounded-lg mb-16">
+      <ToastContainer /> 
       <h1 className="text-2xl font-bold mb-6">Edit Event</h1>
-
       <form onSubmit={handleSubmit}>
         <div className="mb-4">
           <label
@@ -237,7 +246,10 @@ export default function EditEvent() {
         </div>
 
         <div className="mb-4">
-          <label htmlFor="mapUrl" className="block text-sm font-medium text-gray-700">
+          <label
+            htmlFor="mapUrl"
+            className="block text-sm font-medium text-gray-700"
+          >
             Map URL
           </label>
           <input
@@ -245,7 +257,7 @@ export default function EditEvent() {
             id="mapUrl"
             name="mapUrl"
             value={formData.mapUrl}
-            onChange={handleChange} 
+            onChange={handleChange}
             placeholder="Enter map URL"
             className="mt-1 block w-full p-2 border border-gray-300 rounded-md shadow-sm"
           />
